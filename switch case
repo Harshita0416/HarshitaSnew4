@@ -1,0 +1,25 @@
+package Demo;
+
+import java.util.Scanner;
+
+public class SwitchCase {
+	public static void main(String[] args)
+	{
+		int choice;
+		System.out.println("pick one :1. GOOD MORNING 2. GOOD AFTERNOON 3. GOOD EVENING");
+		Scanner obj = new Scanner(System.in);
+		choice = obj.nextInt();
+		switch(choice)
+		{
+		case 1: System.out.println("HELLO, GOOD MORNING.");
+		        break;
+		case 2: System.out.println("HELLO, GOOD AFTERNOON.");
+                break;
+		case 3: System.out.println("HELLO, GOOD EVENING.");
+                break;
+		default: System.out.println("Invalid choice");
+		}
+		obj.close();
+	}
+
+}
